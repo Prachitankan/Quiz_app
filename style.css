@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lobster', cursive;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    transition: all 0.7s;
+    background-color: rgb(210, 245, 243);
+}
+.container {
+    padding: 20px;
+    background: #efefef;
+    width: 54%;
+    border-radius: 7px;
+    box-shadow: -3px 5px 8px #333;
+    letter-spacing: 1px;
+    animation: container 1s ease-in-out;
+}
+@keyframes container {
+    0%{
+        transform: translateY(-200px);
+        opacity: 0;
+    }   
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    } 
+}
+.quiz-box.hide {
+    display: none;
+}
+.top-section {
+    padding-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #c2c2c2;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.question-no {
+    font-size: 18px;
+    color: teal;
+}
+#question {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: teal;
+    transition: all .7s;
+}
+.option-container p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.option-container input[type=radio]{
+    margin-right: 10px;
+}
+.option-container div {
+    background: #d0c7c7;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all .7s;
+    letter-spacing: 1px;
+}
+.option-container div.correct {
+    background-color: #27ae60;
+    color: #fff;
+}
+.option-container div.wrong {
+    background-color: #c0392b;
+    color: #fff;
+}
+.option-container .alreadyAnswered {
+    pointer-events: none;
+}
+h4.result {
+    font-weight: normal;
+    color: teal;
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.btn {
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: teal;
+    border-radius: 3px;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    cursor: pointer;
+    animation: btn 1s ease-in-out;
+}
+@keyframes btn {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }   
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    } 
+}
+#btn{
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: teal;
+    border-radius: 3px;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.input-area {
+    display: block;
+    outline: none;
+    border: none;
+    padding: 8px;
+    text-align: center;
+    width: 88%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-bottom: 2px solid teal;
+    background: #efefef;
+    color: teal;
+    font-size: 20px;
+    animation: chirag 0.5s ease-in-out;
+}
+@keyframes chirag {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }   
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    } 
+}
+
+.input-area-email {
+    display: block;
+    outline: none;
+    border: none;
+    padding: 8px;
+    text-align: center;
+    width: 88%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-bottom: 2px solid teal;
+    background: #efefef;
+    color: teal;
+    font-size: 20px;
+    animation: chirag 1s ease-in-out;
+}
+
+.form-area {
+    text-align: center;
+}
+.showscore {
+    text-align: center;
+}
+.msg {
+    font-weight: normal;
+    text-align: center;
+    font-size: 25px;
+    color: #c0392b;
+    padding-bottom: 20px;
+}
+.hide {
+    display: none;
+}
